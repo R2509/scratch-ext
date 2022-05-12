@@ -1,4 +1,4 @@
-	class NitroBlock {
+class NitroBlock {
 	getInfo() {
 		return {
 			"id": "NitroBlock",
