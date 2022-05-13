@@ -1,3 +1,5 @@
+// Tutorial on Scratch by NitroBlock. Just tried to see if it works...
+
 class R2509 {
 	constructor() {}
 	getInfo() {
@@ -24,7 +26,7 @@ class R2509 {
 				}
 			},
 					  ],
-			"menus": { //we will get back to this in a later tutorial
+			"menus": { 
 			}
 		}
 	}
