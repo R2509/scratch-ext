@@ -28,7 +28,7 @@ class Random {
 						"type": {
 							"type": "string",
 							"menu": "fetchTypeMenu",
-						}
+						},
 						"url": {
 							"type": "string",
 							"defaultValue": "https://r2509.github.io/home/index.html",
