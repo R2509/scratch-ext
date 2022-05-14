@@ -23,7 +23,7 @@ class Random {
 				{
 					"opcode": "fetchDat",
 					"blockType": "reporter",
-					"text": "fetch response data from [url]",
+					"text": "fetch [type] response data from [url]",
 					"arguments": {
 						"url": {
 							"type": "string",
@@ -39,8 +39,17 @@ class Random {
 	math_power ({a, b}) {
 		return a ** b;
 	}
-	fetchDat({url}) {
-		return fetch(url).then(response => response.text());
+	fetchDat({type, url}) {
+		return fetch(url).then(response => {
+			switch (type) {
+				case "text":
+					return response.text();
+					break;
+				case "JSON":
+					return response.json();
+					break;
+			}
+		})
 	}
 }
 Scratch.extensions.register(new Random());
