@@ -25,6 +25,10 @@ class Random {
 					"blockType": "reporter",
 					"text": "fetch [type] response data from [url]",
 					"arguments": {
+						"type": {
+							"type": "string",
+							"menu": "fetchTypeMenu",
+						}
 						"url": {
 							"type": "string",
 							"defaultValue": "https://r2509.github.io/home/index.html",
@@ -33,11 +37,14 @@ class Random {
 				}
 			],
 			"menus": {
+				"fetchTypeMenu": {
+					"items": ["JSON", "text"]
+				},
 			}
 		}
 	}
-	math_power ({a, b}) {
-		return a ** b;
+	math_power ({num1, num2}) {
+		return num1 ** num2;
 	}
 	fetchDat({type, url}) {
 		return fetch(url).then(response => {
