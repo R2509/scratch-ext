@@ -31,7 +31,7 @@ class Random {
 						},
 						URL: {
 							type: 'string',
-							default: 'https://r2509.github.io/home/index.html'
+							defaultValue: 'https://r2509.github.io/home/index.html'
 						}
 					}
 				}
@@ -46,14 +46,8 @@ class Random {
 	math_power ({a, b}) {
 		return a ** b;
 	}
-	async fetchData({type, url}) {
-		let data = await fetch(url).then(response => {
-		return {
-			JSON: response.json(),
-			text: response.text(),
-		}[type]
-		});
-		return data;
+	fetchData({type, url}) {
+		return fetch(url).then(response => response.text());
 	}
 }
 Scratch.extensions.register(new Random());
