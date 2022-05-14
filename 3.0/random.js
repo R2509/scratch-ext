@@ -1,5 +1,5 @@
 class Random {
-	constructor () {}
+	constructor() {}
 	getInfo() {
 		return {
 			id: 'Random',
@@ -9,6 +9,16 @@ class Random {
 					opcode: 'math_power',
 					blockType: 'reporter',
 					text: '[A] ^ [B]',
+					arguments: {
+						A: {
+							type: 'number',
+							default: '5',
+						},
+						B: {
+							type: 'number',
+							default: '2',
+						},
+					}
 				}
 			],
 		}
