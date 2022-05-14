@@ -29,7 +29,7 @@ class Random {
 					arguments: {
 						TYPE: {
 							type: 'string',
-							menu: fetchTypeMenu,
+							menu: 'fetchTypeMenu',
 						},
 						URL: {
 							type: 'string',
