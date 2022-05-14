@@ -12,11 +12,11 @@ class Random {
 					arguments: {
 						A: {
 							type: 'number',
-							default: '5',
+							default: 5,
 						},
 						B: {
 							type: 'number',
-							default: '2',
+							default: 2,
 						},
 					}
 				}
