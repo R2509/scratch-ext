@@ -3,8 +3,6 @@ class Random {
 	getInfo() {
 		return {
 			id: 'Random',
-			color1: '#FF8C1A',
-			color2: 'DB6E00',
 			name: 'Random Blocks',
 			blocks: [
 				{
