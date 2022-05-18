@@ -38,7 +38,8 @@ class Random {
 			],
 			"menus": {
 				"fetchTypeMenu": {
-					"items": ["JSON", "text"]
+					"acceptReporters": "true",
+					"items": ["(1) text", "(2) JSON"],
 				},
 			}
 		}
@@ -47,12 +48,15 @@ class Random {
 		return num1 ** num2;
 	}
 	fetchDat({type, url}) {
+		type = type.toString();
 		return fetch(url).then(response => {
 			switch (type) {
-				case "text":
+				case "(1) text":
+				case "1":
 					return response.text();
 					break;
-				case "JSON":
+				case "(2) JSON":
+				case "2":
 					return response.json();
 					break;
 			}
