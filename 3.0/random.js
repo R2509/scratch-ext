@@ -34,6 +34,12 @@ class Random {
 							"defaultValue": "https://r2509.github.io/home/index.html",
 						}
 					}
+				},
+				{
+					"opcode": "search",
+					"blockType": "reporter",
+					"text": "search for [text]",
+					
 				}
 			],
 			"menus": {
