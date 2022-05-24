@@ -26,7 +26,7 @@ class LStorage {
 		}
 	}
 	getLocalStorageKeys() {
-		return Object.keys(localStorage);
+		return ['d1', 'd2'];
 	}
 	getFromLS () {
 		return '';
