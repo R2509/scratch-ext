@@ -8,12 +8,12 @@ class LStorage {
 				{
 					"opcode": "getFromLS",
 					"blockType": "reporter",
-					"text": "get [key] from localStorage",
+					"text": "get [key] from localStora0ge",
 					"arguments": {
 						"key": {
 							"type": "string",
 							"menu": "localStorageKeys",
-						}
+						},
 					},
 				},
 			],
@@ -22,13 +22,13 @@ class LStorage {
 					"acceptReporters": "true",
 					"items": "getLocalStorageKeys",
 				},
-			}
+			},
 		}
 	}
 	getLocalStorageKeys() {
 		return ['d1', 'd2'];
 	}
-	getFromLS () {
+	getFromLS ({key}) {
 		return '';
 	}
 }
