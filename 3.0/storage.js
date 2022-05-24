@@ -1,4 +1,4 @@
-class Storage {
+class LStorage {
 	constructor() {}
 	getInfo() {
 		return {
@@ -6,7 +6,7 @@ class Storage {
 			"name": "Storage",
 			"blocks": [
 				{
-					"opcode": "get",
+					"opcode": "getFromLS",
 					"blockType": "reporter",
 					"text": "get [key] from localStorage",
 					"arguments": {
@@ -26,7 +26,10 @@ class Storage {
 		}
 	}
 	getLocalStorageKeys() {
-		return Object.keys(localStorage)
+		return Object.keys(localStorage);
+	}
+	getFromLS () {
+		return '';
 	}
 }
-Scratch.extensions.register(new Random());
+Scratch.extensions.register(new LStorage());
