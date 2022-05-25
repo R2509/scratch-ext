@@ -12,22 +12,25 @@ class LStorage {
 					"arguments": {
 						"thingzy": {
 							"type": "string",
-							"menu": "localStorageKeys",
+							"menu": "dynamicMenu",
 						},
 					},
 				},
 			],
-			"menus": {
-				"localStorageKeys": {
-					"acceptReporters": "true",
-					"items": "getDynamicMenuItems",
+			menus: {
+				staticMenu: {
+					items: ['static 1', 'static 2', 'static 3']
 				},
+				dynamicMenu: {
+					items: 'getDynamicMenuItems'
+				}
 			},
 		};
 	};
+	// this member function will be called each time the menu opens
 	getDynamicMenuItems () {
-		return ['d1', 'd2', 5];
-	};
+		return ['dynamic 1', 'dynamic 2', 'dynamic 3'];
+	}
 	getFromLS ({thingzy}) {
 		return 'hehe';
 	};
