@@ -1,5 +1,7 @@
 class LStorage {
-	constructor() {}
+	constructor(runtime) {
+		this.runtime = runtime;
+	}
 	getInfo() {
 		return {
 			"id": "storage",
