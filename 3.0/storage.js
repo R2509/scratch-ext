@@ -19,7 +19,7 @@ class LStorage {
 			],
 			"menus": {
 				"localStorageKeys": {
-					"acceptReporters": "true",
+					//"acceptReporters": "true",
 					"items": "getLStorageKeys",
 				},
 			},
