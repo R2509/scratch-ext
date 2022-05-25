@@ -1,3 +1,12 @@
+function newLS() {
+	localStorage.Scratch = {};
+	localStorage.Scratch.LS = {
+		version: '0.1.0',
+		data: {},
+	}
+}
+
+
 class LStorage {
 	constructor(runtime) {
 		this.runtime = runtime;
@@ -36,13 +45,6 @@ class LStorage {
 			]
 		}
 	};
-	newLS() {
-		localStorage.Scratch = {};
-		localStorage.Scratch.LS = {
-			version: '0.1.0',
-			data: {},
-		}
-	}
 	getFromLS({key}) {
 		if (localStorage.Scratch.LS.data) {
 			if (localStorage.Scratch.LS.data[key]) {
