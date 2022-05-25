@@ -20,14 +20,14 @@ class LStorage {
 			"menus": {
 				"localStorageKeys": {
 					"acceptReporters": "true",
-					"items": "getLocalStorageKeys",
+					"items": ['hi', 'bruh'],
 				},
-			},
+			},"
 		}
 	}
-	getLocalStorageKeys() {
+	/*getLocalStorageKeys() {
 		return ['d1', 'd2'];
-	}
+	}*/
 	getFromLS ({thingzy}) {
 		return '';
 	}
