@@ -1,4 +1,4 @@
-function newLS() {
+functionfunction newLS() {
 	localStorage.Scratch = {};
 	localStorage.Scratch.LS = {
 		version: '0.1.0',
@@ -61,6 +61,7 @@ class LStorage {
 			localStroage.Scratch.LS.data[key] = value;
 		} else {
 			newLS()
+		}
 	}
-}
+};
 Scratch.extensions.register(new LStorage());
