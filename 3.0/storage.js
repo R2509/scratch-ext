@@ -19,14 +19,14 @@ class LStorage {
 			],
 			"menus": {
 				"localStorageKeys": {
-					//"acceptReporters": "true",
-					"items": "getLStorageKeys",
+					"acceptReporters": "true",
+					"items": "getDynamicMenuItems",
 				},
 			},
 		};
 	};
-	getLStorageKeys () {
-		return ['d1', 'd2'];
+	getDynamicMenuItems () {
+		return ['d1', 'd2', 5];
 	};
 	getFromLS ({thingzy}) {
 		return 'hehe';
