@@ -20,16 +20,16 @@ class LStorage {
 			"menus": {
 				"localStorageKeys": {
 					"acceptReporters": "true",
-					"items": ['hi', 'bruh'],
+					"items": "getLStorageKeys",
 				},
 			},
-		}
-	}
-	/*getLocalStorageKeys() {
+		};
+	};
+	getLStorageKeys () {
 		return ['d1', 'd2'];
-	}*/
+	};
 	getFromLS ({thingzy}) {
-		return '';
-	}
+		return 'hehe';
+	};
 }
 Scratch.extensions.register(new LStorage());
