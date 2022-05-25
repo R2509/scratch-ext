@@ -22,7 +22,7 @@ class LStorage {
 					"acceptReporters": "true",
 					"items": ['hi', 'bruh'],
 				},
-			},"
+			},
 		}
 	}
 	/*getLocalStorageKeys() {
