@@ -4,37 +4,37 @@ class LStorage {
 	}
 	getInfo() {
 		return {
-			"id": "storage",
-			"name": "Storage",
-			"blocks": [
-				{
-					"opcode": "getFromLS",
-					"blockType": "reporter",
-					"text": "get [thingzy] from localStora0ge",
-					"arguments": {
-						"thingzy": {
-							"type": "string",
-							"menu": "dynamicMenu",
-						},
-					},
-				},
-			],
-			menus: {
-				staticMenu: {
-					items: ['static 1', 'static 2', 'static 3']
-				},
-				dynamicMenu: {
-					items: 'getDynamicMenuItems'
+	id: 'storage',
+	name: 'Storage',
+	blocks: [
+		{
+			opcode: 'getFromLS',
+			blockType: 'reporter',
+			text: 'get [key] from localStorage',
+			arguments: {
+				key: {
+					type: 'string',
+					menu: 'dynamicMenu'
 				}
-			},
-		};
+			}
+		}
+	]
+}
 	};
-	// this member function will be called each time the menu opens
-	getDynamicMenuItems ({}) {
-		return ['dynamic 1', 'dynamic 2', 'dynamic 3'];
-	}
-	getFromLS ({thingzy}) {
-		return 'hehe';
+	getFromLS ({key}) {
+		if (localStorage.Scratch.LS.data) {
+			if (localStorage.Scratch.LS.data[key]) {
+				return localStorage.Scratch.LS.data[key];
+			} else {
+				return '';
+			}
+		} else {
+			localStorage.Scratch = {};
+			localStorage.Scratch.LS = {
+				version: '0.1.0',
+				data: {},
+			};
+		}
 	};
 }
 Scratch.extensions.register(new LStorage());
