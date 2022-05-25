@@ -30,7 +30,7 @@ class LStorage {
 		};
 	};
 	// this member function will be called each time the menu opens
-	getDynamicMenuItems () {
+	getDynamicMenuItems ({}) {
 		return ['dynamic 1', 'dynamic 2', 'dynamic 3'];
 	}
 	getFromLS ({thingzy}) {
