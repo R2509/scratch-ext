@@ -1,4 +1,4 @@
-functionfunction newLS() {
+function newLS() {
 	localStorage.Scratch = {};
 	localStorage.Scratch.LS = {
 		version: '0.1.0',
