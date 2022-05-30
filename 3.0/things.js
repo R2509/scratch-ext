@@ -6,7 +6,7 @@ class Things {
 			name: 'Things',
 			blocks: [
 				{
-					opcode: 'substring',
+					opcode: 'sliceString',
 					blockType: 'reporter',
 					text: 'substring of [str] from [i1] to [i2]',
 					arguments: {
@@ -28,7 +28,7 @@ class Things {
 		}
 	}
 	
-	substring ({str, i1, i2}) {
+	sliceString ({str, i1, i2}) {
 		return str.substring(i1-1, i2);
 	}
 }
