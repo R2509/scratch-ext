@@ -33,4 +33,4 @@ class Things {
 	}
 }
 
-Scrath.extensions.register(new Things())
+Scratch.extensions.register(new Things())
