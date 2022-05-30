@@ -29,7 +29,7 @@ class Things {
 	}
 	
 	substring ({str, i1, i2}) {
-		return str.substring(i1+1, i2+2);
+		return str.substring(i1-1, i2);
 	}
 }
 
